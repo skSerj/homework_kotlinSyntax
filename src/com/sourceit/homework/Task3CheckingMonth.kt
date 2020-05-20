@@ -1,13 +1,13 @@
 package com.sourceit.homework
 
-fun Int.checkMonthWith31Days(month: Int): Boolean {
-    return month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12
+fun Int.checkMonthWith31Days(): Boolean {
+    return this == 1 || this == 3 || this == 5 || this == 7 || this == 8 || this == 10 || this == 12
 }
 
-fun Int.checkMonthWith30Days(month: Int): Boolean {
-    return month == 4 || month == 6 || month == 9 || month == 11
+fun Int.checkMonthWith30Days(): Boolean {
+    return this == 4 || this == 6 || this == 9 || this == 11
 }
 
-fun Int.checkLeapYear(year: Int): Boolean {
-    return year % 400 == 0 || ((year % 4 == 0) && (year % 100 != 0))
+fun Int.checkLeapYear(): Boolean {
+    return this % 400 == 0 || ((this % 4 == 0) && (this % 100 != 0))
 }
